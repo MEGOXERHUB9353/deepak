@@ -142,7 +142,7 @@ def handle_attack_details(message):
             target, port, duration = message.text.split()
             duration = int(duration)
 
-            MAX_DURATION = 240
+            MAX_DURATION = 120
             if user_id not in ADMIN_IDS and duration > MAX_DURATION:
                 bot.send_message(message.chat.id, f"❗️𝗠𝗮𝘅𝗶𝗺𝘂𝗺 𝗨𝘀𝗮𝗴𝗲 𝗧𝗶𝗺𝗲 𝗶𝘀 {MAX_DURATION} 𝗦𝗲𝗰𝗼𝗻𝗱𝘀❗️")
                 return
